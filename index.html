@@ -3,73 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rachel Marland, RMT | Paris, Ontario</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Massage Therapy & Acupuncture | Paris, ON</title>
+
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f7fbff;
-    color: #1f2d3d;
-    line-height: 1.6;
+  color: #333;
+  line-height: 1.6;
 }
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-}
+
 header {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to bottom, #e6f2ff, #ffffff);
+  position: relative;
+  height: 90vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("building.jpg") center 40% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-    font-weight: 600;
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
 }
-h2 {
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #2c5282;
+
+.logo {
+  height: 70px;
 }
-p {
-    font-size: 1.05rem;
+
+.phone {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
+
+.hero-content {
+  text-align: center;
+  color: white;
+  padding-bottom: 120px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
 .button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 28px;
-    background-color: #2c5282;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.3s ease;
+  display: inline-block;
+  background: #2F5F7F;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
 }
+
 .button:hover {
-    background-color: #1a365d;
+  background: #244B63;
 }
-.section {
-    padding: 60px 0;
+
+section {
+  padding: 80px 10%;
+  text-align: center;
 }
-.services ul {
-    list-style: none;
-    padding: 0;
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
 }
-.services li {
-    padding: 8px 0;
+
+.service h3 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
 }
-.footer {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #e6f2ff;
-    font-size: 0.9rem;
+
+.service p {
+  color: #666;
 }
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
+
+.about {
+  background: #f7f7f7;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 100%;
+  margin-bottom: 25px;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  background: #2F5F7F;
+  color: white;
 }
 </style>
 </head>
@@ -77,74 +117,50 @@ p {
 <body>
 
 <header>
-    <h1>Rachel Marland, RMT</h1>
-    <p>Registered Massage Therapist · Paris, Ontario</p>
-    <p>Professional therapeutic massage in a calm, restorative setting.</p>
-    <a href="#" class="button">Online Booking Coming Soon</a>
+  <div class="top-bar">
+    <img src="logo.png" class="logo" alt="Logo">
+    <div class="phone">(519) 555-1234</div>
+  </div>
+
+  <div class="hero-content">
+    <h1>Massage Therapy & Acupuncture in Paris, ON</h1>
+    <a href="#" class="button">Book an Appointment</a>
+  </div>
 </header>
 
-<div class="container">
+<section>
+  <h2>Our Services</h2>
 
-    <section class="section">
-        <h2>Experienced, Personalized Care</h2>
-        <p>
-            With over 17 years of clinical experience, Rachel Marland provides professional
-            massage therapy tailored to each client’s needs. Whether you are seeking pain relief,
-            stress reduction, injury recovery, or preventative care, treatments are designed
-            to support your overall health and well-being.
-        </p>
-        <p>
-            Located in Paris, Ontario at West River Road Massage Therapy.
-        </p>
-    </section>
+  <div class="services">
+    <div class="service">
+      <h3>Massage Therapy</h3>
+      <p>Stress relief, injury recovery, and personalized wellness care.</p>
+    </div>
 
-    <section class="section services">
-        <h2>Therapeutic Massage Services</h2>
-        <ul>
-            <li>• Therapeutic & Deep Tissue Massage</li>
-            <li>• Relaxation Massage</li>
-            <li>• Prenatal Massage</li>
-            <li>• TMJ & Headache Relief</li>
-            <li>• Acupuncture & Electro-Acupuncture</li>
-            <li>• Lymphatic Drainage</li>
-            <li>• Soft Tissue Mobilization (IASTM)</li>
-            <li>• Hot Stone Massage</li>
-        </ul>
-    </section>
+    <div class="service">
+      <h3>Acupuncture</h3>
+      <p>Traditional and modern techniques to restore balance and reduce pain.</p>
+    </div>
 
-    <section class="section">
-        <h2>Why Choose Rachel</h2>
-        <p>
-            • 17+ Years Experience<br>
-            • Registered Massage Therapist (RMT)<br>
-            • Calm, Private Treatment Space<br>
-            • Direct Billing Available<br>
-            • Debit, Visa, Mastercard Accepted
-        </p>
-    </section>
+    <div class="service">
+      <h3>Red Light Therapy</h3>
+      <p>Non-invasive light therapy to support tissue repair and reduce inflammation.</p>
+    </div>
+  </div>
+</section>
 
-    <section class="section">
-        <h2>Location</h2>
-        <p>
-            West River Road Massage Therapy<br>
-            95 West River Road<br>
-            Paris, Ontario
-        </p>
-    </section>
+<section class="about">
+  <h2>Meet Rachel</h2>
+  <img src="rachel.jpg" alt="Rachel">
+  <p>
+    Dedicated to providing professional, compassionate care in a calm and welcoming environment.
+  </p>
+</section>
 
-    <section class="section" style="text-align:center;">
-        <h2>Ready to Book?</h2>
-        <p>
-            Professional, personalized massage therapy focused on helping you feel your best.
-        </p>
-        <a href="#" class="button">Book Your Appointment</a>
-    </section>
-
-</div>
-
-<div class="footer">
-    © 2026 Rachel Marland, RMT · Paris, Ontario
-</div>
+<footer>
+  © 2026 Rachel Wellness | Paris, Ontario
+</footer>
 
 </body>
 </html>
+
